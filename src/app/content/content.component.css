@@ -1,0 +1,12 @@
+.content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+}
+
+.content-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
