@@ -1,0 +1,43 @@
+#about-header{
+    align-self: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#about-text1{
+    align-self: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#about-picture{
+    align-self: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 30vw;
+    height: 30vw;
+    text-align: center;
+}
+
+#about-text2{
+    align-self: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#about-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.about-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

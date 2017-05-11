@@ -1,12 +1,13 @@
-.content-container{
+#content-container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: white;
 }
 
 .content-row{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: white;
+    border: 10px solid #d9d9d9;
 }
