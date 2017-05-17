@@ -7,10 +7,10 @@
     </div>
   </div>
   <div class="nav-container-row" style="padding-top:0px;">
-    <div>Home</div>
-    <div>Vehicles</div>
-    <div>Contact</div>
-    <div>Location</div>
-    <div>About</div>
+    <div (click)="viewServiceService.setHomeViews()">Home</div>
+    <div (click)="viewServiceService.setVehiclesViews()">Vehicles</div>
+    <div (click)="viewServiceService.setContactViews()">Contact</div>
+    <div (click)="viewServiceService.setLocationViews()">Location</div>
+    <div (click)="viewServiceService.setAboutViews()">About</div>
   </div>
 </div>

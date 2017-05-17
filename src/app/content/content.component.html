@@ -1,8 +1,14 @@
 <div id="content-container">
-    <div class="content-row">
+    <div *ngIf="viewServiceService.getPortalViewStatus()" class="content-row">
         <app-portal></app-portal>
     </div>
-    <div class="content-row">
+    <div *ngIf="viewServiceService.getContactViewStatus()" class="content-row">
+        <app-contact></app-contact>
+    </div>
+    <div *ngIf="viewServiceService.getLocationViewStatus()" class="content-row">
+        <app-location></app-location>
+    </div>
+    <div *ngIf="viewServiceService.getAboutViewStatus()" class="content-row">
         <app-about></app-about>
     </div>
 </div>

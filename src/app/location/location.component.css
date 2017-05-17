@@ -1,0 +1,43 @@
+#location-header{
+    align-self: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#location-text1{
+    align-self: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#location-picture{
+    align-self: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 30vw;
+    height: 30vw;
+    text-align: center;
+}
+
+#location-text2{
+    align-self: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#location-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.location-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

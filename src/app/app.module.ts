@@ -13,6 +13,9 @@ import { AboutComponent } from './about/about.component';
 import { PortalComponent } from './portal/portal.component';
 import { ImageViewerComponent } from './image-viewer/image-viewer.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
+import { VehiclesListComponent } from './vehicles-list/vehicles-list.component';
+
+import { ViewServiceService } from './view-service.service';
 
 @NgModule({
   declarations: [
@@ -25,14 +28,15 @@ import { VehicleComponent } from './vehicle/vehicle.component';
     AboutComponent,
     PortalComponent,
     ImageViewerComponent,
-    VehicleComponent
+    VehicleComponent,
+    VehiclesListComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ViewServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
