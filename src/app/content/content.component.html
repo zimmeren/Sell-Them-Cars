@@ -11,4 +11,7 @@
     <div *ngIf="viewServiceService.getAboutViewStatus()" class="content-row">
         <app-about></app-about>
     </div>
+    <div *ngIf="viewServiceService.getVehicleListViewStatus()" class="content-row">
+        <app-vehicles-list style="flex-grow:1;"></app-vehicles-list>
+    </div>
 </div>

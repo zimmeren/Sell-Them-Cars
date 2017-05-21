@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ViewServiceService } from './../view-service.service';
+
 @Component({
   selector: 'app-portal',
   templateUrl: './portal.component.html',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortalComponent implements OnInit {
 
-  constructor() { }
+  constructor(private viewServiceService: ViewServiceService) { }
 
   ngOnInit() {
   }
