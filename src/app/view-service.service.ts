@@ -41,7 +41,7 @@ export class ViewServiceService {
     this.contactView = true;
     this.locationView = true;
     this.portalView = true;
-    this.vehicleListView = false;
+    this.vehicleListView = true;
     this.imageViewerView = true;
   }
 

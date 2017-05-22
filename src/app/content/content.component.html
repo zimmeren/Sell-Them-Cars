@@ -1,17 +1,17 @@
 <div id="content-container">
+    <div *ngIf="viewServiceService.getVehicleListViewStatus()" class="content-row">
+        <app-vehicles-list style="flex-grow:1;"></app-vehicles-list>
+    </div>
     <div *ngIf="viewServiceService.getPortalViewStatus()" class="content-row">
         <app-portal></app-portal>
     </div>
     <div *ngIf="viewServiceService.getContactViewStatus()" class="content-row">
-        <app-contact></app-contact>
+        <app-contact style="flex-grow:1;"></app-contact>
     </div>
     <div *ngIf="viewServiceService.getLocationViewStatus()" class="content-row">
-        <app-location></app-location>
+        <app-location style="flex-grow:1;"></app-location>
     </div>
     <div *ngIf="viewServiceService.getAboutViewStatus()" class="content-row">
-        <app-about></app-about>
-    </div>
-    <div *ngIf="viewServiceService.getVehicleListViewStatus()" class="content-row">
-        <app-vehicles-list style="flex-grow:1;"></app-vehicles-list>
+        <app-about style="flex-grow:1;"></app-about>
     </div>
 </div>
