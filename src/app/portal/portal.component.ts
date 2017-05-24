@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ViewServiceService } from './../view-service.service';
+import { ConfigurationService } from './../configuration.service';
 
 @Component({
   selector: 'app-portal',
@@ -9,7 +10,7 @@ import { ViewServiceService } from './../view-service.service';
 })
 export class PortalComponent implements OnInit {
 
-  constructor(private viewServiceService: ViewServiceService) { }
+  constructor(private viewServiceService: ViewServiceService, private configurationService: ConfigurationService) { }
 
   ngOnInit() {
   }

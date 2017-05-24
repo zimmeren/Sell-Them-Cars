@@ -1,22 +1,21 @@
 <div id="location-column">
   <div class="location-row">
     <div id="location-header">
-      Location
+      {{configurationService.locationHeader}}
     </div>
   </div>
   <div class="location-row">
     <div id="location-text1">
-      Come visit us and see our selection in person. 
+      {{configurationService.locationText1}}
     </div>
   </div>
   <div class="location-row">
     <div id="location-text2">
-      0000 Tester Ave N
-      TesterVille, test  
+      {{configurationService.locationText2}}
     </div>
   </div>
   <div class="location-row">
-    <img src="../../assets/images/architecture-107598_1280.jpg" id="location-picture">
+    <img id="location-picture" [src]="'../../'+configurationService.locationImage">
   </div>
   <div class="location-row" style="padding-bottom: 20px; padding-top:20px;">
     <div id="gmap">

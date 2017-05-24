@@ -1,21 +1,20 @@
 <div id="about-column">
   <div class="about-row">
     <div id="about-header">
-      Getting to know Tester Auto Sales
+      {{configurationService.aboutHeader}}
     </div>
   </div>
   <div class="about-row">
     <div id="about-text1">
-      Tester auto sales is a family owned small business of 15 years. We are here to treat you like family when buying your next motor vehicle.
+      {{configurationService.aboutText1}}
     </div>
   </div>
   <div class="about-row">
-    <img id="about-picture" src="../../assets/images/family-2145302_1280.png">
+    <img id="about-picture" [src]="'../../'+configurationService.aboutImage">
   </div>
   <div class="about-row">
     <div id="about-text2">
-      More text here. More text here. More text here. More text here. More text here. More text here. More text here. More text here. More text here. More text here. More text here.
-      More text here. More text here. More text here. More text here. More text here. More text here. More text here. More text here. More text here. More text here. More text here.
+      {{configurationService.aboutText2}}
     </div>
   </div>
 </div>

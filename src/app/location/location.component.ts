@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
+import { ConfigurationService } from './../configuration.service';
+
 declare var google: any;
 
 @Component({
@@ -8,17 +11,17 @@ declare var google: any;
 })
 export class LocationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private configurationService: ConfigurationService) { }
 
   ngOnInit() {
     var mapProp = {
-      center: new google.maps.LatLng(44.977753, -93.265011),
+      center: new google.maps.LatLng(this.configurationService.locationLat, this.configurationService.locationLng),
       zoom: 15,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     var map = new google.maps.Map(document.getElementById("gmap"), mapProp);
     var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(44.977753, -93.265011),
+            position: new google.maps.LatLng(this.configurationService.locationLat, this.configurationService.locationLng),
             map: map
     });
   }
