@@ -1,18 +1,6 @@
 <div id="vehicles-list-container">
-  <div class ="vehicles-list-row">
-    <app-vehicle class="vehicles-list-grow">
-    </app-vehicle>
-  </div>
-  <div class ="vehicles-list-row">
-    <app-vehicle class="vehicles-list-grow">
-    </app-vehicle>
-  </div>
-  <div class ="vehicles-list-row">
-    <app-vehicle class="vehicles-list-grow">
-    </app-vehicle>
-  </div>
-  <div class ="vehicles-list-row">
-    <app-vehicle class="vehicles-list-grow">
+  <div class ="vehicles-list-row" *ngFor="let vehicle of inventory">
+    <app-vehicle class="vehicles-list-grow" [vehicle]="vehicle">
     </app-vehicle>
   </div>
 </div>

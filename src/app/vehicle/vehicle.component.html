@@ -1,20 +1,20 @@
 <div class="vehicle-container">
   <div class="vehicle-row">
     <div class="vehicle-title vehicle-row-item">
-      Test Car Name
+      {{vehicle.name}}
     </div>
     <div class="vehicle-title vehicle-row-item">
-      Price: $10000
+      Price: ${{vehicle.price}}
     </div>
   </div>
   <div class="vehicle-row">
-    <img src="../../assets/images/cars/jeep1234231.jpeg" alt="vehicle picture" class="vehicle-image vehicle-row-item">
+    <img [src]="vehicle.pictures[0]" alt="vehicle picture" class="vehicle-image vehicle-row-item">
     <div class="vehicle-details vehicle-row-item">
-      <div> Drive: AWD </div>
-      <div> Miles: 400000 </div>
-      <div> Engine: V8 </div> 
-      <div> Transmission: 6 speed </div>
-      <div> Color: White </div>
+      <div> Drive: {{vehicle.drive}} </div>
+      <div> Miles: {{vehicle.miles}} </div>
+      <div> Engine: {{vehicle.engine}} </div> 
+      <div> Transmission: {{vehicle.transmission}} </div>
+      <div> Color: {{vehicle.color}} </div>
     </div>
   </div>
 </div>

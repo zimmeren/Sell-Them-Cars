@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InventoryService } from './../inventory.service';
 
 @Component({
   selector: 'app-vehicles-list',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VehiclesListComponent implements OnInit {
 
-  constructor() { }
+  inventory: object;
+
+  constructor(private inventoryService: InventoryService) { }
+
+  getInventory(): void {
+    this.inventoryService
+        .getInventory()
+        .then(inventory => this.inventory = inventory);
+  }
 
   ngOnInit() {
+    this.getInventory();
   }
 
 }

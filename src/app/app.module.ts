@@ -17,6 +17,7 @@ import { VehiclesListComponent } from './vehicles-list/vehicles-list.component';
 
 import { ViewServiceService } from './view-service.service';
 import { ConfigurationService } from './configuration.service';
+import { InventoryService } from './inventory.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { ConfigurationService } from './configuration.service';
     FormsModule,
     HttpModule
   ],
-  providers: [ViewServiceService, ConfigurationService],
+  providers: [ViewServiceService, ConfigurationService, InventoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
