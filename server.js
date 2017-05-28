@@ -3,6 +3,15 @@ const express = require('express');
 const path = require('path');
 const http = require('http');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+
+//connect to MongoDB
+mongoose.connect('mongodb://localhost/sellthemcars');
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  console.log("successfully connectected to sellthemcars database");
+});
 
 // Get our API routes
 const api = require('./server/routes/api');
