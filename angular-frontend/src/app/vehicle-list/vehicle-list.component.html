@@ -1,3 +1,6 @@
-<p>
-  vehicle-list works!
-</p>
+<div id="vehicle-list-container">
+  <div class ="vehicle-list-row" *ngFor="let vehicle of inventory">
+    <app-vehicle class="vehicle-list-grow" [vehicle]="vehicle">
+    </app-vehicle>
+  </div>
+</div>

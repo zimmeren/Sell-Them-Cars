@@ -1,17 +1,13 @@
-#vehicle-list-container{
+#content-container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.vehicle-list-row{
+.content-row{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border-top: 10px solid #d9d9d9;
-    border-bottom: 10px solid #d9d9d9;
-}
-
-.vehicle-list-grow{
-    flex-grow: 1;
+    background-color: white;
+    border: 10px solid #d9d9d9;
 }

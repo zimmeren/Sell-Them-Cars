@@ -1,3 +1,16 @@
-<p>
-  header-nav works!
-</p>
+<div id="nav-container" [style.border-bottom-color]="configurationService.auxColor">
+  <div class="nav-container-row">
+    <div id="nav-title" [style.color]="configurationService.auxColor">{{configurationService.navHeader}}</div>
+    <div id="nav-contact-column">
+      <div>Phone: {{configurationService.contactPhoneNumber}}</div>
+      <div>Email: {{configurationService.contactEmail}}</div>
+    </div>
+  </div>
+  <div class="nav-container-row" style="padding-top:0px;">
+    <div (click)="viewManagerService.setHomeViews()" class="nav-tab">Home</div>
+    <div (click)="viewManagerService.setVehiclesViews()" class="nav-tab">Vehicles</div>
+    <div (click)="viewManagerService.setContactViews()" class="nav-tab">Contact</div>
+    <div (click)="viewManagerService.setLocationViews()" class="nav-tab">Location</div>
+    <div (click)="viewManagerService.setAboutViews()" class="nav-tab">About</div>
+  </div>
+</div>

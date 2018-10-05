@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ViewManagerService } from './../view-manager.service';
+import { ConfigurationService } from './../configuration.service';
+
 @Component({
   selector: 'app-portal',
   templateUrl: './portal.component.html',
@@ -7,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortalComponent implements OnInit {
 
-  constructor() { }
+  constructor(private viewManagerService: ViewManagerService, private configurationService: ConfigurationService) { }
 
   ngOnInit() {
   }

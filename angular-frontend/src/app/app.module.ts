@@ -11,6 +11,7 @@ import { LocationComponent } from './location/location.component';
 import { PortalComponent } from './portal/portal.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { VehicleListComponent } from './vehicle-list/vehicle-list.component';
+import { ContentComponent } from './content/content.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { VehicleListComponent } from './vehicle-list/vehicle-list.component';
     LocationComponent,
     PortalComponent,
     VehicleComponent,
-    VehicleListComponent
+    VehicleListComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule
