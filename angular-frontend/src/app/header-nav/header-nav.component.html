@@ -1,16 +1,17 @@
-<div id="nav-container" [style.border-bottom-color]="configurationService.auxColor">
-  <div class="nav-container-row">
-    <div id="nav-title" [style.color]="configurationService.auxColor">{{configurationService.navHeader}}</div>
-    <div id="nav-contact-column">
-      <div>Phone: {{configurationService.contactPhoneNumber}}</div>
-      <div>Email: {{configurationService.contactEmail}}</div>
-    </div>
-  </div>
-  <div class="nav-container-row" style="padding-top:0px;">
-    <div (click)="viewManagerService.setHomeViews()" class="nav-tab">Home</div>
-    <div (click)="viewManagerService.setVehiclesViews()" class="nav-tab">Vehicles</div>
-    <div (click)="viewManagerService.setContactViews()" class="nav-tab">Contact</div>
-    <div (click)="viewManagerService.setLocationViews()" class="nav-tab">Location</div>
-    <div (click)="viewManagerService.setAboutViews()" class="nav-tab">About</div>
-  </div>
-</div>
+<mat-toolbar class="mat-elevation-z4" color="primary">
+  <mat-toolbar-row class="custom-nav-row" fxLayout="row" fxLayoutAlign="space-between center">
+      <span id="nav-title">{{configurationService.navHeader}}</span>
+      <div fxLayout="column" fxShow.lt-md="false">
+        <span>Phone: {{configurationService.contactPhoneNumber}}</span>
+        <span>Email: {{configurationService.contactEmail}}</span>
+      </div>
+  </mat-toolbar-row>
+  <mat-toolbar-row class="custom-nav-row" fxLayout="row wrap" fxLayoutAlign="space-between center" fxLayoutGap="5%">
+      <span>Home</span>
+      <span>Vehicles</span>
+      <span>Request</span>
+      <span>About</span>
+      <span>Location</span>
+      <span>Contact</span>
+  </mat-toolbar-row>
+</mat-toolbar>
